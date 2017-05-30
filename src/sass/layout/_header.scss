@@ -1,0 +1,93 @@
+.page-header {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  background-color: $gray-blue;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 10px;
+  position: relative;
+
+  @include media($tablet-screen-min) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    @extend %logo;
+  }
+
+  &__toggle {
+    background: none;
+    border: none;
+
+    &:focus{
+      outline: none;
+    }
+
+    @include media($tablet-screen-min) {
+      display: none;
+    }
+
+    i {
+      margin-right: 15px;
+      color: $sky-blue;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__main {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 66px;
+    width: 100%;
+    z-index: 2;
+    background-color: $gray-blue;
+    border-top: 1px solid #fff;
+
+    @include media($tablet-screen-min) {
+      position: static;
+      display: inline-block;
+      width: auto;
+      border: none;
+    }
+  }
+
+  &__list {
+    margin: 7.5px 0;
+
+    li {
+      @include media($tablet-screen-min) {
+        display: inline-block;
+      }
+    }
+
+    a {
+      color: $light-gray;
+      display: block;
+      padding: 10px 15px;
+      font-weight: 400;
+
+      &:hover {
+        color: $sky-blue;
+      }
+    }
+
+    .active {
+      color: $sky-blue;
+    }
+
+  }
+}

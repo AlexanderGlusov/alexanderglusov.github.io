@@ -1,0 +1,41 @@
+.features {
+  padding: 90px 15px 20px;
+  font-size: 0;
+
+  @extend .container;
+
+  &__main-title {
+    @extend %section-maintitle;
+    margin-bottom: 70px;
+  }
+
+  &__article {
+    margin-bottom: 55px;
+    padding: 0 10px 0 30px;
+    position: relative;
+
+    @include media($tablet-screen-min) {
+      display: inline-block;
+      width: 50%;
+    }
+
+    i {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      color: $sky-blue;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: rem(20);
+  }
+
+  &__description {
+    @extend %section-description;
+  }
+
+}

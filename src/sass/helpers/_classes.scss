@@ -1,0 +1,42 @@
+%bg-gray {
+  background: $gray-ultra-light;
+  border-top: 1px solid $gray-medium;
+  border-bottom: 1px solid $gray-medium;
+}
+
+%section-paddinds {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+
+  @include media($mobile-screen-lg-min) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+%input-btn {
+  padding: 10px 32px;
+  font-size: 1.125rem;
+  color: #fff;
+  border: 2px solid $sky-blue;
+  border-radius: 50px;
+  background-color: $sky-blue;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+
+  &:hover {
+    background: none;
+    color: $sky-blue;
+  }
+
+  &:focus {
+    box-shadow: 0 0 2px 1px $sky-blue;
+  }
+
+  &:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+  }
+
+}

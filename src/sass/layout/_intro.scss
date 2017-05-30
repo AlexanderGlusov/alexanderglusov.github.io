@@ -1,0 +1,53 @@
+.intro {
+  padding: 100px 15px 0;
+  position: relative;
+  font-size: 13px;
+  color: #fff;
+  background: #333b4d;
+  min-height: 400px;
+  z-index: 1;
+
+  &__bg-image {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    opacity: 0.10;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../img/bg2.jpg') no-repeat center;
+  }
+
+  &__logo {
+    @extend %logo;
+    text-align: center;
+  }
+
+  &__showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 720px;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+
+  &__title {
+    margin: 74px 0 18px;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__description {
+    display: inline-block;
+    margin-bottom: 45px;
+    font-size: 1.2rem;
+    color: $gray;
+
+  }
+}

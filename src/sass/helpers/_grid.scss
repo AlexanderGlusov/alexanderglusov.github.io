@@ -1,0 +1,13 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include media(max-width 1230px) {
+
+  }
+
+  @include media($mobile-screen-sm-max) {
+
+  }
+}

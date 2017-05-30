@@ -1,0 +1,94 @@
+.pricing {
+  @extend .container;
+  @extend %section-paddinds;
+
+  text-align: center;
+
+  &__main-title {
+    @extend %section-maintitle;
+
+    margin-bottom: 70px;
+  }
+
+  &__card {
+    display: inline-block;
+    width: 250px;
+    margin: 0 10px 20px;
+    padding-top: 10px;
+    border-radius: 6px;
+    background: $gray-light;
+    text-align: center;
+    color: $gray-blue;
+
+    a {
+      display: block;
+      color: inherit;
+
+      &:hover .pricing__btn {
+        background: $sky-blue;
+      }
+
+      &:hover .pricing__price {
+        transform: scale(1.05);
+        background: $sky-blue;
+      }
+
+    }
+
+  }
+
+  &__card-title {
+    display: block;
+    margin-bottom: 40px;
+    padding: 15px;
+    background: $gray-blue;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__price {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: $gray-lighter;
+    border-radius: 50%;
+    font-size: rem(14);
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s;
+
+    div {
+      font-size: rem(42);
+      font-weight: 700;
+      color: $gray-blue;
+    }
+  }
+
+  &__list {
+
+    li {
+      padding: 8px;
+    }
+  }
+
+  &__btn {
+    width: 155px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background: $gray-blue;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}

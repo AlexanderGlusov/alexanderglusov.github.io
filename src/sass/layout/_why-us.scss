@@ -1,0 +1,77 @@
+.why-us {
+  @extend  %section-paddinds;
+  @extend .container;
+
+  font-size: 0;
+
+  &__image-container,
+  &__block {
+    @include media($tablet-screen-min) {
+      display: inline-block;
+      width: 50%;
+      padding: 0 15px;
+    }
+  }
+
+  &__image-container {
+    text-align: center;
+    vertical-align: top;
+
+    @include media($big-tablet-screen-min) {
+      width: 42%;
+    }
+
+    img {
+      max-width: 300px;
+    }
+  }
+
+  &__block {
+    @include media($big-tablet-screen-min) {
+      width: 58%;
+    }
+  }
+
+  &__title {
+    @extend %section-maintitle;
+  }
+
+  &__description {
+    @extend %section-description;
+
+    margin-bottom: 30px;
+  }
+
+  &__articles {
+    padding-top: 30px;
+
+    @include media($tablet-screen-min) {
+      display: flex;
+    }
+
+    article {
+      @include media($tablet-screen-min) {
+        width: 33.3%;
+        padding: 0 10px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    h5 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      @extend %section-description;
+
+      margin-bottom: 15px;
+    }
+  }
+}

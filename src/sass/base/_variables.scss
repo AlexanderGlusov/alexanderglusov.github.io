@@ -1,0 +1,61 @@
+///////////////////
+// Base typography
+///////////////////
+$root-font-size: 16px !default;
+$tablet-font-size: 12px !default;
+$mobile-font-size: 11px !default;
+
+$base-font-size: 1rem !default;
+$base-font-family: 'Source Sans Pro', sans-serif;
+$logo-font-family: 'Courgette', cursive;
+
+$title-font-family: "Bebas Neue", Impact, Charcoal, sans-serif;
+$base-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+///////////////////
+// Colors
+///////////////////
+$gray-blue: #333b4d;
+$sky-blue: #3bc0c3;
+$blue: #66afe9;
+$light-gray: #CAD4DB;
+$gray: #ccc;
+$gray-ultra-light: #f7f8fa;
+$gray-medium: #e7e8ec;
+$gray-dark: #555;
+$gray-lighter: #949799;
+$gray-light: #d9d9d9;
+
+$twitter-color: #4099FF;
+$pinterest-color: #C92228;
+$facebook-color: #3b5998;
+$youtube-color: #cc181e;
+$instagram-color: #cd486b;
+$skype-color: #5bd0ea;
+$dribbble-color: #C73B6F;
+$github-color: #333;
+
+///////////////////
+// Media queries
+///////////////////
+$mobile-screen-sm-min: min-width 361px;
+$mobile-screen-sm-max: max-width 360px;
+$mobile-screen-md-min: min-width 501px;
+$mobile-screen-md-max: max-width 500px;
+$mobile-screen-lg-min: min-width 651px;
+$mobile-screen-lg-max: max-width 650px;
+$tablet-screen-min: min-width 768px;
+$tablet-screen-max: max-width 768px;
+$big-tablet-screen-min: min-width 961px;
+$big-tablet-screen-max: max-width 960px;
+$desktop-screen-xs-min: min-width 1024px;
+$desktop-screen-xs-max: max-width 1024px;
+$desktop-screen-sm-min: min-width 1100px;
+$desktop-screen-sm-max: max-width 1100px;
+$desktop-screen-md-max: max-width 1280px; 
+
+//////////////////////
+// Quantity component
+//////////////////////
+$quantity-size: 3.214rem;
+$quantity-small-size: 2.214rem;

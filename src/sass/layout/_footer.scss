@@ -1,0 +1,59 @@
+.page-footer {
+  @extend %bg-gray;
+
+  padding: 50px 15px 40px;
+  text-align: center;
+
+  &__social-links {
+    margin-bottom: 10px;
+
+    li {
+      display: inline-block;
+      margin: 5px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $sky-blue;
+      border-radius: 50%;
+    }
+
+    a {
+      display: block;
+      line-height: 40px;
+      font-size: 1.5rem;
+      color: $light-gray;
+      transition: 0.3s;
+    }
+
+    .link-twitter:hover {
+      color: $twitter-color;
+    }
+    .link-pinterest:hover {
+      color: $pinterest-color;
+    }
+    .link-facebook:hover {
+      color: $facebook-color;
+    }
+    .link-instagram:hover {
+      color: $instagram-color;
+    }
+    .link-youtube:hover {
+      color: $youtube-color;
+    }
+    .link-skype:hover {
+      color: $skype-color;
+    }
+    .link-dribbble:hover {
+      color: $dribbble-color;
+    }
+    .link-github:hover {
+      color: $github-color;
+    }
+
+  }
+
+  &__copyright {
+    margin-bottom: 10px;
+    color: $gray-lighter;
+  }
+
+}

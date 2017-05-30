@@ -1,0 +1,137 @@
+.morefeatures {
+  @extend %bg-gray;
+  @extend  %section-paddinds;
+
+  background-image: url(../img/bg-3.png);
+  background-repeat: repeat ;
+
+  &__main-title{
+    @extend %section-maintitle;
+  }
+
+  &__group {
+    @include media($desktop-screen-xs-min){
+      display: flex;
+    }
+  }
+
+  &__article-group {
+    padding-top: 80px;
+
+    @include media($desktop-screen-xs-min){
+      width: 33.3%;
+    }
+  }
+
+  &__article {
+    margin-bottom: 50px;
+    text-align: center;
+
+    &:hover .morefeatures__number {
+      border-width: 0;
+      line-height: 60px;
+    }
+
+  }
+
+  &__number {
+    display: inline-block;
+    margin-bottom: 19px;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    background: $sky-blue;
+    box-shadow: 0 0 3px $sky-blue;
+    font-size: rem(30);
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    transition: 0.15s;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: rem(18);
+  }
+
+  &__description {
+    @extend %section-description;
+  }
+
+  &__image-container {
+    position: relative;
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__round-container {
+    position: absolute;
+    padding: 8px;
+
+    &::before {
+      content: '';
+      width: 49px;
+      height: 49px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 2px solid;
+      border-radius: 100%;
+      border-color: #3bc0c3;
+      animation: doublePulse 1.5s ease infinite;
+    }
+
+    &:nth-child(2) {
+      top: 20%;
+      left: 8%;
+
+      @include media($mobile-screen-sm-min){
+        left: 10%;
+      }
+
+    }
+
+    &:nth-child(3) {
+      bottom: 20%;
+      left: 8%;
+
+      @include media($mobile-screen-sm-min){
+        left: 10%;
+      }
+
+    }
+
+    &:nth-child(4) {
+      top: 20%;
+      right: 7%;
+
+      @include media($mobile-screen-sm-min){
+        right: 9%;
+      }
+
+    }
+
+    &:nth-child(5) {
+      right: 7%;
+      bottom: 20%;
+
+      @include media($mobile-screen-sm-min){
+        right: 9%;
+      }
+
+    }
+  }
+
+  &__round {
+    position: relative;
+    width: 33px;
+    height: 33px;
+    background: $sky-blue;
+    border-radius: 50%;
+    line-height: 32px;
+    color: #fff;
+  }
+
+}

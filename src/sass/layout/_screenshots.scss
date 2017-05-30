@@ -1,0 +1,27 @@
+.screenshots {
+  @extend .container;
+  @extend  %section-paddinds;
+
+  &__main-title {
+    @extend %section-maintitle;
+  }
+
+  .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .owl-prev,
+  .owl-next {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border: 1px solid $sky-blue;
+    border-radius: 50%;
+    color: $sky-blue;
+    text-align: center;
+    line-height: 28px;
+    font-size: rem(20);
+  }
+}

@@ -1,0 +1,68 @@
+.subscribe {
+  @extend %bg-gray;
+  @extend %section-paddinds;
+
+  &__container {
+    @extend .container;
+  }
+
+  &__main-title {
+    @extend %section-maintitle;
+  }
+
+  &__description {
+    @extend %section-description;
+
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__success {
+    display: none;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media($mobile-screen-lg-min) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+    }
+  }
+
+  &__input {
+    padding: 10px 32px;
+    margin: 0 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid $gray;
+    color: $gray-dark;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+    @include media($big-tablet-screen-min) {
+      margin-top: 0;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:focus {
+      border-color: $blue;
+      outline: none;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    }
+
+  }
+
+  &__btn {
+    @extend %input-btn;
+
+    margin: 0 5px 15px;
+  }
+}

@@ -1,0 +1,16 @@
+%section-maintitle {
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 80px;
+    margin: 15px auto 60px;
+    border: 2px solid $sky-blue;
+    border-radius: 5px;
+  }
+}
