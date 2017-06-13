@@ -17,7 +17,18 @@
         <div class="header__logo"></div>
         <button type="button" class="header__toggle" id="header__toggle">Menu</button>
       </div>
-      <nav class="header__nav" id="header__nav">
+  
+      <nav class="header__nav header__nav-mob">
+        <ul class="header__nav-list">
+          <li class="header__element"><a class="go_to" href="#first">Home</a></li>
+          <li class="header__element"><a class="go_to" href="#second">Features</a></li>
+          <li class="header__element"><a class="go_to" href="#third">Brands</a></li>
+          <li class="header__element"><a class="go_to" href="#forth">Reviews</a></li>
+          <li class="header__element"><a class="go_to" href="#fifth">Contacts</a></li>
+        </ul>
+      </nav>
+  
+      <nav class="header__nav header__nav-desc">
         <ul class="header__nav-list" id="menu">
           <li class="header__element"><a href="#intro">Home</a></li>
           <li class="header__element"><a href="#features">Features</a></li>
@@ -26,55 +37,54 @@
           <li class="header__element"><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
+  
     </div>
   </header>
 
   <div id="full-page">  <!--id="full-page"-->
-    <section class="intro fullpage-section">
+    <section class="intro fullpage-section" id="first">
+      <div class="section-topic">
+        <p class="section-topic__number intro__topic-number">01</p>
+        <p class="section-topic__title">
+          Hello! We are
+        </p>
+        <div class="section-topic__line"></div>
+      </div>
       <div class="container container--pad">
-    
-        <div class="section-topic">
-          <p class="section-topic__number intro__topic-number">01</p>
-          <p class="section-topic__title">
-            Hello! We are
-          </p>
-          <div class="section-topic__line"></div>
-        </div>
-    
         <div class="intro__main">
           <img class="intro__logo" src="img/main-logo.svg" alt="main-logo">
           <div class="intro__description">
             the exclusive distributor of trade marks Red Castle, Beaba and Trousselier in Russia
           </div>
         </div>
-    
-        <a class="next-section-btn" href="#features">
+        <a class="next-section-btn next-section-btn--mob go_to" href="#second">
           <div class="next-section-btn__container">
             <div class="btn-triangle"></div>
           </div>
           <span class="next-section-btn__description">Our Features</span>
         </a>
-    
       </div>
-    
+      <a class="next-section-btn" href="#features">
+        <div class="next-section-btn__container">
+          <div class="btn-triangle"></div>
+        </div>
+        <span class="next-section-btn__description">Our Features</span>
+      </a>
       <div class="intro__bottom-border">
       </div>
       <div class="intro__bottom-border-two">
       </div>
     </section>
-    <section class="features fullpage-section">
+    <section class="features fullpage-section" id="second">
+      <div class="section-topic">
+        <p class="section-topic__number">02</p>
+        <p class="section-topic__title">
+          Our mission
+        </p>
+        <div class="section-topic__line section-topic__line--alt"></div>
+      </div>
       <div class="container container--pad">
-    
-        <div class="section-topic">
-          <p class="section-topic__number">02</p>
-          <p class="section-topic__title">
-            Our mission
-          </p>
-          <div class="section-topic__line alt"></div>
-        </div>
-    
         <div class="features__main">
-    
           <div class="features__main-description-block">
             <div class="back-round"></div>
             <div class="features__main-description feature-description-1">
@@ -82,64 +92,51 @@
               Certification services for their operations and supply chain. Globally. 24/7.
               <span class="next-feature-btn" id="next-description-2">/ Next</span>
             </div>
-    
             <div class="features__main-description feature-description-2">
               Most likely you’re not going to be the only one to touch that codebase. There will be more experienced
               folks, juniors and people in between. Eventually, shitty developers will get their hands on your codebase.
               <div class="next-feature-btn" id="next-description-3">/ Next</div>
             </div>
-    
             <div class="features__main-description feature-description-3">
               Whenever you’re writing CSS for a new component, stop for a minute and think about how to make it
               accessible. Then, using just your CSS, create tests for that.
               <div class="next-feature-btn" id="next-description-1">/ Next</div>
             </div>
           </div>
-    
-          <div class="features__add-description features__add-description--1 feature-description-add-1">
-            Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi,
-            quis iaculis nulla iaculis vitae.
+          <div class="features__add-description-block">
+            <div class="features__add-description features__add-description--1 feature-description-add-1">
+              Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi,
+              quis iaculis nulla iaculis vitae.
+            </div>
+            <div class="features__add-description features__add-description--2 feature-description-add-2">
+              That’s a very basic example. You can get a lot more complex and test for ARIA roles, labels and whatever
+              you feel is needed for that particular component to be accessible.
+            </div>
+            <div class="features__add-description features__add-description--3 feature-description-add-3">
+              I so much love BEM. I love BEMIT even more. It’s what I use to build all my front-ends and refactor my
+              clients’ codebases.
+            </div>
           </div>
-    
-          <div class="features__add-description features__add-description--2 feature-description-add-2">
-            That’s a very basic example. You can get a lot more complex and test for ARIA roles, labels and whatever
-            you feel is needed for that particular component to be accessible.
-          </div>
-    
-          <div class="features__add-description features__add-description--3 feature-description-add-3">
-            I so much love BEM. I love BEMIT even more. It’s what I use to build all my front-ends and refactor my
-            clients’ codebases.
-          </div>
-    
         </div>
-    
-        <a class="next-section-btn" href="#brands">
-          <div class="next-section-btn__container">
-            <div class="btn-triangle"></div>
-          </div>
-          <span class="next-section-btn__description">Our Brands</span>
-        </a>
-    
       </div>
-    </section>
-    <section class="brands fullpage-section"> <!--fullpage-section-->
-    
-      <div class="container container--pad">
-    
-        <div class="section-topic">
-          <p class="section-topic__number">03</p>
-          <p class="section-topic__title">
-            Our brands
-          </p>
-          <div class="section-topic__line"></div>
+      <a class="next-section-btn" href="#brands">
+        <div class="next-section-btn__container">
+          <div class="btn-triangle"></div>
         </div>
-    
-    
-    
-    
+        <span class="next-section-btn__description">Our Brands</span>
+      </a>
+    </section>
+    <section class="brands fullpage-section" id="third">
+      <div class="section-topic">
+        <p class="section-topic__number">03</p>
+        <p class="section-topic__title">
+          Our brands
+        </p>
+        <div class="section-topic__line"></div>
+      </div>
+      <div class="container container--pad">
           <div class="brands__wrapper">
-    
-            <div class="brands__card first-page">
+            <div class="brands__card">
               <div class="brands__name">Red Castle</div>
               <div class="brands__logo-container">
                 <img class="brands__logo" src="img/red-castle.png">
@@ -150,7 +147,7 @@
               </div>
               <a href="http://www.redcastle.fr/index-en.html" target="_blank" class="outer-link">know more</a>
             </div>
-            <div class="brands__card first-page">
+            <div class="brands__card">
               <div class="brands__name">Beaba</div>
               <div class="brands__logo-container">
                 <img class="brands__logo" src="img/beaba.png">
@@ -161,7 +158,7 @@
               </div>
               <a href="https://www.beaba.com/en/" target="_blank" class="outer-link">know more</a>
             </div>
-            <div class="brands__card first-page">
+            <div class="brands__card">
               <div class="brands__name">Trousselier</div>
               <div class="brands__logo-container">
                 <img class="brands__logo" src="img/trousselier.png">
@@ -172,8 +169,7 @@
               </div>
               <a href="http://www.trousselier.fr/1en.aspx" target="_blank" class="outer-link">know more</a>
             </div>
-    
-            <div class="brands__card second-page">
+            <div class="brands__card hidden-brands">
               <div class="brands__name">Faber Castell</div>
               <div class="brands__logo-container">
                 <img class="brands__logo" src="img/faber-castell.jpg">
@@ -184,7 +180,7 @@
               </div>
               <a href="http://www.trousselier.fr/1en.aspx" target="_blank" class="outer-link">know more</a>
             </div>
-            <div class="brands__card second-page">
+            <div class="brands__card hidden-brands">
               <div class="brands__name">Helen Harper</div>
               <div class="brands__logo-container">
                 <img class="brands__logo" src="img/helen-harper.png">
@@ -195,36 +191,27 @@
               </div>
               <a href="http://www.trousselier.fr/1en.aspx" target="_blank" class="outer-link">know more</a>
             </div>
-    
           </div>
-    
-    
-    
         <a class="brands-toggle">More brands</a>
         <a class="brands-toggle-desktop">Next</a>
-    
-        <a class="next-section-btn" href="#reviews">
-          <div class="next-section-btn__container">
-            <div class="btn-triangle"></div>
-          </div>
-          <span class="next-section-btn__description">Reviews</span>
-        </a>
       </div>
-    </section>
-    <section class="reviews fullpage-section">
-    
-      <div class="container container--pad">
-    
-        <div class="section-topic">
-          <p class="section-topic__number">04</p>
-          <p class="section-topic__title">
-            Reviews
-          </p>
-          <div class="section-topic__line"></div>
+      <a class="next-section-btn" href="#reviews">
+        <div class="next-section-btn__container">
+          <div class="btn-triangle"></div>
         </div>
-    
+        <span class="next-section-btn__description">Reviews</span>
+      </a>
+    </section>
+    <section class="reviews fullpage-section" id="forth">
+      <div class="section-topic">
+        <p class="section-topic__number">04</p>
+        <p class="section-topic__title">
+          Reviews
+        </p>
+        <div class="section-topic__line"></div>
+      </div>
+      <div class="container container--pad">
         <div class="owl-carousel owl-theme">
-    
           <div class="reviews__block">
             <div class="reviews__short">
               <p class="short__text">
@@ -248,7 +235,6 @@
               </div>
             </div>
           </div>
-    
           <div class="reviews__block">
             <div class="reviews__short">
               <p class="short__text">
@@ -272,7 +258,6 @@
               </div>
             </div>
           </div>
-    
           <div class="reviews__block">
             <div class="reviews__short">
               <p class="short__text">
@@ -296,42 +281,33 @@
               </div>
             </div>
           </div>
-    
         </div>
-    
-        <a class="next-section-btn" href="#contacts">
-          <div class="next-section-btn__container">
-            <div class="btn-triangle"></div>
-          </div>
-          <span class="next-section-btn__description">Contacts</span>
-        </a>
-    
       </div>
-    
-    </section>
-    <section class="contacts fullpage-section">
-    
-      <div class="container container--pad">
-    
-        <div class="section-topic">
-          <p class="section-topic__number">05</p>
-          <p class="section-topic__title">
-            Contacts
-          </p>
-          <div class="section-topic__line"></div>
+      <a class="next-section-btn" href="#contacts">
+        <div class="next-section-btn__container">
+          <div class="btn-triangle"></div>
         </div>
-    
+        <span class="next-section-btn__description">Contacts</span>
+      </a>
+    </section>
+    <section class="contacts fullpage-section" id="fifth">
+      <div class="section-topic">
+        <p class="section-topic__number">05</p>
+        <p class="section-topic__title">
+          Contacts
+        </p>
+        <div class="section-topic__line"></div>
+      </div>
+      <div class="container container--pad">
         <div class="contacts__content">
           <div class="contacts__phone contacts__block">
             <h3 class="contacts__title">Call us</h3>
             <a href="tel:+7916235-15-26" class="contacts__description">+ 7 916 235-15-26</a>
           </div>
-    
           <div class="contacts__mail contacts__block">
             <h3 class="contacts__title">Write us</h3>
             <a href="mailto:info@abondance.ru" class="contacts__description">info@abondance.ru</a>
           </div>
-    
           <div class="contacts__address contacts__block">
             <h3 class="contacts__title">Visit us</h3>
             <a class="contacts__description contacts__address" target="_blank" href="https://goo.gl/maps/nuZgbpNvNwo">
@@ -340,16 +316,13 @@
                 show on map
               </div>
             </a>
-    
           </div>
         </div>
       </div>
-    
       <footer class="page-footer">
         <div class="footer__author">Design by J.J. Gittes</div>
         <div class="footer__copyright">2017 Abondance Distribution. All rights reserved</div>
       </footer>
-    
     </section>
   </div>
 
